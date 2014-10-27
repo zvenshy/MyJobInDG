@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* test sass modules lib
+ *
+ *
+ *@author           Venshy
+ *@version          0.1
+ *@last-time        2014.10.26
+ *
+ */
+
+
+/* 文件载入
+ ----------------------------------------------------------*/
+@import  "reset";                   /*  css reset  */
+@import  "layout/header";
+@import  "layout/slide";
+@import  "layout/nav";
+@import  "layout/main";
+@import  "layout/footer";

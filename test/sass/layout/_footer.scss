@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+footer {
+	width: 100%;
+	padding-bottom: 1px;
+
+	ul {
+		width: 100%;
+		border-top: 1px solid #bebebe;
+		float: left;
+	}
+
+	li {
+		float: left;
+		text-align: center;
+		width: (108/398)*100%;
+		height: 44px;
+		font: 15px/44px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+		border-right: 1px solid #bebebe;
+
+		a {
+			color: #666;
+			text-decoration: none;
+
+			&:active {
+				color: red;
+			}
+		}
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.menu {
+	width: (70/398)*100%;
+
+	img {
+		vertical-align: middle;
+	}
+	
+}
+
+.noRight {
+	border-right: 0;
+}
+
+.secList {
+	width: 120%;
+	position: relative;
+	background: #fff;
+	top: -180px;
+	float: none;
+	z-index: 100;
+
+	li {
+		width: 100%;
+		float: none;
+	}
+}

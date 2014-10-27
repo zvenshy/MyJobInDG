@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/* test sass modules lib
+ *
+ *
+ *@author           Venshy
+ *@version          0.1
+ *@last-time        2014.10.26
+ *
+ */
+/* 文件载入
+ ----------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*  css reset  */
+header {
+  width: 100%;
+  min-width: 300px;
+  height: 50px;
+  background: url("../images/headerBg.png") repeat-x white; }
+
+#pagelogo {
+  width: 122px;
+  height: 32px;
+  background: url("../images/pageLogo.png");
+  margin-left: 16px;
+  margin-top: 9px; }
+
+#pagehead, #pagelogo {
+  float: left; }
+
+#pagehead {
+  font: bold 12px/1.0 "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+  margin-top: 9px;
+  margin-left: 9px; }
+  #pagehead h2 {
+    font: 11px/1.0 "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+    color: #808080;
+    margin-top: 4px;
+    padding: 0; }
+
+#share a {
+  width: 24px;
+  height: 17px;
+  float: right;
+  background: url("../images/share.png");
+  margin: 17px 17px 0 0; }
+
+#slide {
+  width: 100%;
+  overflow: hidden; }
+
+.tab-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 0; }
+
+.tab-pannel {
+  width: 100%;
+  overflow: hidden; }
+  .tab-pannel img {
+    width: 100%; }
+
+nav {
+  width: 100%;
+  background: #fff; }
+  nav ul {
+    overflow: hidden;
+    width: 92.96482%;
+    padding: 10px 0 4px;
+    margin: 0 auto; }
+  nav li {
+    float: left;
+    width: 22.97297%;
+    margin-bottom: 6px;
+    margin-right: 2.7027%; }
+    nav li img {
+      width: 100%; }
+  nav dd {
+    height: 26px;
+    text-align: center; }
+    nav dd a {
+      font: 14px/26px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+      color: #666;
+      text-decoration: none; }
+    nav dd a:active {
+      color: red; }
+
+.clear {
+  clear: right;
+  margin: 0; }
+
+#des {
+  padding-bottom: 13px; }
+  #des .content {
+    font: 12px/24px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+    color: #6e6e6e;
+    padding: 0 15px; }
+    #des .content img {
+      width: 100%; }
+  #des address a {
+    color: #6e6e6e;
+    text-decoration: none; }
+
+#des h3 {
+  text-align: center;
+  font: 18px/1.0 "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+  color: #000;
+  margin: 17px 0 13px; }
+
+.contentHead {
+  width: 100%;
+  height: 32px;
+  background: #e04b23;
+  border-bottom: 1px solid #c94727;
+  overflow: hidden; }
+  .contentHead span {
+    float: right;
+    margin-right: 15px;
+    font: 11px/1.0 sans-serif;
+    position: relative;
+    top: -20px; }
+    .contentHead span a {
+      color: #fff;
+      text-decoration: none; }
+      .contentHead span a:active {
+        color: red; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #fea891; }
+
+h2 {
+  font: 14px/32px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+  color: #fff;
+  padding-left: 13px; }
+  h2 i {
+    display: inline-block;
+    width: 5px;
+    height: 12px;
+    background: url("../images/h2logo.png");
+    margin-right: 10px;
+    position: relative;
+    top: 1px; }
+
+#news li {
+  width: 100%;
+  height: 41px;
+  list-style: square;
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+  #news li i {
+    width: 5px;
+    height: 6px;
+    background: #666;
+    display: inline-block;
+    margin: 0 10px 1px 11px; }
+  #news li a {
+    font: 12px/41px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+    color: #858585;
+    text-decoration: none; }
+  #news li a:active {
+    color: red; }
+
+#proList {
+  padding-bottom: 11px; }
+  #proList img {
+    width: 100%; }
+  #proList ul {
+    width: 93.46734%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 10px; }
+  #proList li {
+    width: 47.58065%; }
+    #proList li dd {
+      height: 37px;
+      text-align: center; }
+    #proList li a {
+      font: 12px/37px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+      color: #666;
+      text-decoration: none; }
+      #proList li a:active {
+        color: red; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+footer {
+  width: 100%;
+  padding-bottom: 1px; }
+  footer ul {
+    width: 100%;
+    border-top: 1px solid #bebebe;
+    float: left; }
+  footer li {
+    float: left;
+    text-align: center;
+    width: 27.13568%;
+    height: 44px;
+    font: 15px/44px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+    border-right: 1px solid #bebebe; }
+    footer li a {
+      color: #666;
+      text-decoration: none; }
+      footer li a:active {
+        color: red; }
+
+.hide {
+  display: none; }
+
+.menu {
+  width: 17.58794%; }
+  .menu img {
+    vertical-align: middle; }
+
+.noRight {
+  border-right: 0; }
+
+.secList {
+  width: 120%;
+  position: relative;
+  background: #fff;
+  top: -180px;
+  float: none;
+  z-index: 100; }
+  .secList li {
+    width: 100%;
+    float: none; }

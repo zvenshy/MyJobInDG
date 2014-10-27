@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+header {
+    width: 100%;
+    min-width: 300px;
+    height: 50px;
+    background: url("../images/headerBg.png") repeat-x #fff;
+}
+#pagelogo {
+	width: 122px;
+	height: 32px;
+	background: url('../images/pageLogo.png');
+	margin-left: 16px;
+	margin-top: 9px;
+}
+
+#pagehead, #pagelogo{
+	float: left;
+}
+#pagehead {
+	font: bold 12px/1.0 "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+	margin-top: 9px;
+	margin-left: 9px;
+
+	h2 {
+		font: 11px/1.0 "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+		color: #808080;
+		margin-top: 4px;
+		padding: 0;
+	}
+}
+#share a{
+	width: 24px;
+	height: 17px;
+	float: right;
+	background: url("../images/share.png");
+	margin: 17px 17px 0 0;
+}

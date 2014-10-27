@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+#des {
+	padding-bottom: 13px;
+
+	.content {
+		font: 12px/24px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+		color: #6e6e6e;
+		padding: 0 15px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	address a{
+		color: #6e6e6e;
+		text-decoration: none;
+	}
+	
+}
+
+#des h3 {
+	text-align: center;
+	font: 18px/1.0 "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+	color: #000;
+	margin: 17px 0 13px;
+}
+
+.contentHead {
+	width: 100%;
+	height: 32px;
+	background: #e04b23;
+	border-bottom: 1px solid #c94727;
+	overflow: hidden;
+
+	span {
+		float: right;
+		margin-right: 15px;
+		font: 11px/1.0 sans-serif;
+		position: relative;
+		top: -20px;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+
+			&:active {
+				color: red;
+			}
+		}
+	}
+}
+.line {
+	width: 100%;
+	height: 1px;
+	background: #fea891;
+}
+h2 {
+	font: 14px/32px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+	color: #fff;
+	padding-left: 13px;
+
+	i {
+		display: inline-block;
+		width: 5px;
+		height: 12px;
+		background: url("../images/h2logo.png");
+		margin-right: 10px;
+		position: relative;
+		top: 1px;
+	}
+}
+
+
+
+#news {
+
+	li {
+		width: 100%;
+		height: 41px;
+		list-style: square;
+		border-bottom: 1px solid #eaeaea;
+		overflow:hidden;
+		word-break:keep-all;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+
+		i {
+			width: 5px;
+			height: 6px;
+			background: #666;
+			display: inline-block;
+			margin: 0 10px 1px 11px;
+		}	
+
+		a {
+			font: 12px/41px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+			color: #858585;
+			text-decoration: none;
+		}
+
+		a:active {
+			color: red;
+		}
+	}
+
+
+}
+
+#proList {
+	padding-bottom: 11px;
+
+	img{
+		width: 100%;
+	}
+
+	ul {
+		width: (372/398)*100%;
+		overflow: hidden;
+		margin: 0 auto;
+		padding-top: 10px;
+	}
+
+	li {
+		width: (177/372)*100%;
+		
+		dd {
+			height: 37px;
+			text-align: center;
+		}
+		a {
+			font: 12px/37px "Microsoft YaHei","微软雅黑",STHeiti,sans-serif;
+			color: #666;
+			text-decoration: none;
+
+			&:active {
+				color: red;
+			}
+		}
+	}
+
+}
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}

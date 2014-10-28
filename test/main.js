@@ -12,15 +12,12 @@ KISSY.use(["gallery/slide/1.2/", "dom"], function($, c, d) {
     });
     $.all(".menu").on('click', function () {    
         var secList = $.one(this).children('.secList');
-
-        if(secList.css('display') === 'none') {
+         secList.css('display') === 'none' ?
             secList.removeClass('hide')
             .parent()
             .addClass('click')
-                .siblings().removeClass('click')
-        } else {
+                .siblings().removeClass('click') :
             $.one(this).removeClass('click');
-        }
         return false;
     });
 })

@@ -3,6 +3,10 @@
 footer {
 	width: 100%;
 	padding-bottom: 1px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
 
 	ul {
 		width: 100%;
@@ -29,17 +33,25 @@ footer {
 	}
 }
 
-.hide {
+.menu ul {
 	display: none;
 }
 
-.menu {
+.search {
 	width: (70/398)*100%;
 
 	img {
 		vertical-align: middle;
 	}
 	
+}
+
+.click {
+	background: #bababa;
+
+	ul {
+		display: block;
+	}
 }
 
 .noRight {
@@ -53,6 +65,7 @@ footer {
 	top: -180px;
 	float: none;
 	z-index: 100;
+	border: 1px solid #bebebe;
 
 	li {
 		width: 100%;

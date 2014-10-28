@@ -139,7 +139,8 @@ header {
 
 #slide {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  height: auto; }
 
 .tab-content {
   position: relative;
@@ -259,7 +260,7 @@ h2 {
     color: red; }
 
 #proList {
-  padding-bottom: 11px; }
+  padding-bottom: 50px; }
   #proList img {
     width: 100%; }
   #proList ul {
@@ -287,7 +288,11 @@ h2 {
 
 footer {
   width: 100%;
-  padding-bottom: 1px; }
+  padding-bottom: 1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff; }
   footer ul {
     width: 100%;
     border-top: 1px solid #bebebe;
@@ -305,13 +310,18 @@ footer {
       footer li a:active {
         color: red; }
 
-.hide {
+.menu ul {
   display: none; }
 
-.menu {
+.search {
   width: 17.58794%; }
-  .menu img {
+  .search img {
     vertical-align: middle; }
+
+.click {
+  background: #bababa; }
+  .click ul {
+    display: block; }
 
 .noRight {
   border-right: 0; }
@@ -322,7 +332,8 @@ footer {
   background: #fff;
   top: -180px;
   float: none;
-  z-index: 100; }
+  z-index: 100;
+  border: 1px solid #bebebe; }
   .secList li {
     width: 100%;
     float: none; }

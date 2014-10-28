@@ -1,4 +1,4 @@
-KISSY.use("gallery/slide/1.2/", function($, c) {
+KISSY.use(["gallery/slide/1.2/", "dom"], function($, c, d) {
     new c("slide", {
         eventype: "click",
         effect: "hSlide",
@@ -8,17 +8,18 @@ KISSY.use("gallery/slide/1.2/", function($, c) {
         hoverStop: !0,
         touchmove: !0,
         adaptive_fixed_width: !0,
-        adaptive_fixed_height: !0,
-        carousel: !0,
-
+        carousel: !0
     });
+    $.all(".menu").on('click', function () {    
+        var secList = $.one(this).children('.secList');
 
-    $.one(".menu").on('singleTap', function () {
-        var secList = $.one(".secList");
         if(secList.css('display') === 'none') {
-            $.one(".secList").show();
+            secList.removeClass('hide')
+            .parent()
+            .addClass('click')
+                .siblings().removeClass('click')
         } else {
-            $.one(".secList").hide();
+            $.one(this).removeClass('click');
         }
         return false;
     });

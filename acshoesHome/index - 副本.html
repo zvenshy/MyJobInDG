@@ -1,0 +1,730 @@
+<!DOCTYPE  html>
+<html class="ui-mobile"><head>
+    <base href="http://mobile.acshoes.com/">
+    <title>美中鞋业网移动版_B2B电子商务平台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=0, user-scalable=yes">
+    <meta content="telephone=yes" name="format-detection">
+    <meta name="baidu-tc-verification" content="cacee319f7846822468cfcf4bcf8e2fb">
+
+    <script type="text/javascript">
+        function gundong(i) {
+            for (var x = 1; x <= 4; x++) {
+                if (i == x) {
+                    document.getElementById("link_" + i).style.display = "block";
+                    document.getElementById("shoe" + i).className = "linkh2";
+                }
+                else {
+                    document.getElementById("link_" + x).style.display = "none";
+                    document.getElementById("shoe" + x).className = " ";
+                }
+            }
+        }
+        function onclink(i) {
+            for (var x = 1; x <= 12; x++) {
+                if (i == x) {
+                    document.getElementById("yufen_" + i).style.display = "block";
+                    document.getElementById("xiehui" + i).className = "linkh2";
+                }
+                else {
+                    document.getElementById("yufen_" + x).style.display = "none";
+                    document.getElementById("xiehui" + x).className = " ";
+                }
+            }
+        }
+    </script>
+    
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style>
+</head>
+
+<body class="ui-mobile-viewport">
+
+<link href="/style/barstyle.css" rel="stylesheet" type="text/css">
+<link href="/style/minstyle.css" rel="stylesheet" type="text/css">
+<link href="/style/index.css" rel="stylesheet" type="text/css">
+<script src="/js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="/js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="/js/boxtab.js" type="text/javascript"></script>
+<div data-role="page" id="page" data-url="page" tabindex="0" class="ui-page ui-body-c ui-page-active" style="min-height: 568px;">
+    <div class="yi-htopc">
+        <a class="yi-htopc-link yi-tj ui-link" style="width:160px;float:left" href="http://www.acshoes.com">点击切换至电脑版</a>
+    </div>
+    <div role="banner" class="ui-header ui-bar-a" data-role="header">
+
+        <div class="ui-title logo" style="margin-left: 8px; margin-right: 5px;">
+            <a class="ui-link" data-ajax="false" href="http://mobile.acshoes.com/" style="display: block;
+                float: left;">
+                <img src="../../style/images/logo.gif" width="90px" style="margin-top: 8px; margin-left: 0;"></a>
+            <strong style="font-size: 12px; text-shadow: none; float: left; margin-top: 14px;
+                color: #fff3e3;">鞋业最专业的产品贸易</strong><br>
+            <strong style="font-size: 12px; text-shadow: none; float: left; color: #fff3e3;">及品牌孵化平台</strong>
+		</div>		
+        <div class="kehud" style="margin-right:5px; margin-top:5px;" id="wxsharecontent1">
+            <img src="../../style/images/icon_msg2.png" width="45px" onclick="document.getElementById('mcover').style.display='block';">
+        </div>   
+    </div>
+    <div data-role="content" class="ui-content" role="main">
+        <form data-ajax="false" action="/Search/Product" method="post">
+        <div class="ui-block-b" style="width: 70%; padding: .5em 0;">
+            <div class="ui-input-search ui-shadow-inset ui-btn-corner-all ui-btn-shadow ui-icon-searchfield ui-body-c"><input maxlength="50" id="txtkey" type="search" name="search" placeholder="请输入产品名称" value="" class="ui-input-text ui-body-c"><a href="#" class="ui-input-clear ui-btn ui-btn-up-c ui-btn-icon-notext ui-btn-corner-all ui-shadow" title="clear text" data-theme="c"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">clear text</span><span class="ui-icon ui-icon-delete ui-icon-shadow"></span></span></a></div>
+        </div>
+        <div class="ui-block-c hc-submit" style="width: 30%">
+            <div data-theme="a" class="ui-btn ui-btn-corner-all ui-shadow ui-btn-up-a" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all" aria-hidden="true"><span class="ui-btn-text">
+                搜索</span></span><button id="btnSearch" type="submit" data-mini="true" onclick="return clickSearch()" data-theme="a" class="ui-btn-hidden" aria-disabled="false">
+                搜索</button></div>
+        </div>
+        </form>
+        <div class="benner" id="slide">
+            <img src="http://mobile.acshoes.com/style/images/benenr.jpg">
+            <!--classId=779-->
+        </div>
+        <div class="pro_1">
+            <div class="pro_top">
+                <h2 class="hua" id="ctuito1" onclick="onclinkto(1)">
+                    成品鞋</h2>
+                <h2 id="ctuito2" onclick="onclinkto(2)">
+                    皮料</h2>
+                <h2 id="ctuito3" onclick="onclinkto(3)">
+                    设备</h2>
+                <h2 id="ctuito4" onclick="onclinkto(4)">
+                    鞋材</h2>
+                <h2 id="ctuito5" onclick="onclinkto(5)">
+                    化工</h2>
+            </div>
+            <div class="pro_bot" id="fenleito_1">
+                <ul>
+
+            <li>
+            <a target="_blank" class="li1 ui-link" title="正装仿皮鞋" href="/ad/ShowAd?adId=4932&amp;entityId=4938&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000100010002&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217105838.jpg" alt="正装仿皮鞋">
+            <br>正装仿皮鞋</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="儿童潮鞋" href="/ad/ShowAd?adId=5015&amp;entityId=4932&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000100100009&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217104731.jpg" alt="儿童潮鞋">
+            <br>儿童潮鞋</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="棉拖鞋" href="/ad/ShowAd?adId=5016&amp;entityId=4933&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000100050004&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217105023.jpg" alt="棉拖鞋">
+            <br>棉拖鞋</a>
+            </li>
+            <li class="oneli">
+            <a target="_blank" class="li1 ui-link" title="内增高" href="/ad/ShowAd?adId=5017&amp;entityId=4934&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000100120005&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217105155.jpg" alt="内增高">
+            <br>内增高</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="坡跟鞋" href="/ad/ShowAd?adId=5018&amp;entityId=4935&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000100020003&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217105331.jpg" alt="坡跟鞋">
+            <br>坡跟鞋</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="商务正装鞋" href="/ad/ShowAd?adId=5019&amp;entityId=4936&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000100010001&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217105502.jpg" alt="商务正装鞋">
+            <br>商务正装鞋</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="雪地靴" href="/ad/ShowAd?adId=5020&amp;entityId=4937&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000100040017&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217105703.jpg" alt="雪地靴">
+            <br>雪地靴</a>
+            </li>
+                    <li class="twoli"><a href="/Product/Index?ClassCode=0001&amp;index=1" data-ajax="false" class="twonli2 ui-link">
+                        <img src="style/images/more.jpg"><br>
+                        更多</a></li>
+                </ul>
+            </div>
+            <div class="pro_bot" id="fenleito_2" style="display: none;">
+                <ul>
+
+            <li>
+            <a target="_blank" class="li1 ui-link" title="PU皮革" href="/ad/ShowAd?adId=5022&amp;entityId=4939&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00610002&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217110144.jpg" alt="PU皮革">
+            <br>PU皮革</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="PVC皮革" href="/ad/ShowAd?adId=5023&amp;entityId=4940&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00610003&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217110355.jpg" alt="PVC皮革">
+            <br>PVC皮革</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="超纤皮革" href="/ad/ShowAd?adId=5024&amp;entityId=4941&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00610001&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217110526.jpg" alt="超纤皮革">
+            <br>超纤皮革</a>
+            </li>
+            <li class="oneli">
+            <a target="_blank" class="li1 ui-link" title="袋鼠皮革" href="/ad/ShowAd?adId=5025&amp;entityId=4942&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D004900080011&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217110654.jpg" alt="袋鼠皮革">
+            <br>袋鼠皮革</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="猪皮" href="/ad/ShowAd?adId=5026&amp;entityId=4943&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D004900050001&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217110908.jpg" alt="猪皮">
+            <br>猪皮</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="牛皮" href="/ad/ShowAd?adId=5027&amp;entityId=4944&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D004900040001&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217111157.jpg" alt="牛皮">
+            <br>牛皮</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="数码印花皮" href="/ad/ShowAd?adId=5028&amp;entityId=4945&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D004900070005&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217111319.jpg" alt="数码印花皮">
+            <br>数码印花皮</a>
+            </li>
+                    <li class="twoli"><a href="/Product/Index?ClassCode=0049&amp;index=2" data-ajax="false" class="twonli2 ui-link">
+                        <img src="style/images/more.jpg"><br>
+                        更多</a></li>
+                </ul>
+            </div>
+            <div class="pro_bot" id="fenleito_3" style="display: none;">
+                <ul>
+
+            <li>
+            <a target="_blank" class="li1 ui-link" title="刻楦机" href="/ad/ShowAd?adId=5007&amp;entityId=4924&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FSearch%2FProduct%3Fkw%3D%25E5%2588%25BB%25E6%25A5%25A6%25E6%259C%25BA&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217094850.jpg" alt="刻楦机">
+            <br>刻楦机</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="磨革机" href="/ad/ShowAd?adId=5008&amp;entityId=4925&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00520032&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217095839.jpg" alt="磨革机">
+            <br>磨革机</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="上胶机" href="/ad/ShowAd?adId=5009&amp;entityId=4926&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00530026&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217100836.jpg" alt="上胶机">
+            <br>港宝机</a>
+            </li>
+            <li class="oneli">
+            <a target="_blank" class="li1 ui-link" title="生产流水线" href="/ad/ShowAd?adId=5010&amp;entityId=4927&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D005102020025&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217102600.jpg" alt="生产流水线">
+            <br>伸展机</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="数码皮革切割机" href="/ad/ShowAd?adId=5011&amp;entityId=4928&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D005102030002&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217102812.jpg" alt="数码皮革切割机">
+            <br>皮革切割机</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="鞋揎机" href="/ad/ShowAd?adId=5012&amp;entityId=4929&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00530002&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217103039.jpg" alt="鞋揎机">
+            <br>鞋揎设备</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="针车" href="/ad/ShowAd?adId=5013&amp;entityId=4930&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D0054&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217103412.jpg" alt="针车">
+            <br>缝制设备</a>
+            </li>
+                    <li class="twoli"><a href="/Product/Index?ClassCode=0061&amp;index=4" data-ajax="false" class="twonli2 ui-link">
+                        <img src="style/images/more.jpg"><br>
+                        更多</a></li>
+                </ul>
+            </div>
+            <div class="pro_bot" id="fenleito_4" style="display: none;">
+                <ul>
+
+            <li>
+            <a target="_blank" class="li1 ui-link" title="TCR鞋底" href="/ad/ShowAd?adId=5030&amp;entityId=4947&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00560034&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217111751.jpg" alt="TCR鞋底">
+            <br>TCR鞋底</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="热熔胶港宝" href="/ad/ShowAd?adId=5031&amp;entityId=4948&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00050024&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217111943.jpg" alt="热熔胶港宝">
+            <br>热熔胶港宝</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="乳胶鞋垫" href="/ad/ShowAd?adId=5032&amp;entityId=4949&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FSearch%2FProduct%3Fkw%3D%25E4%25B9%25B3%25E8%2583%25B6%25E9%259E%258B%25E5%259E%25AB&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217112113.jpg" alt="乳胶鞋垫">
+            <br>乳胶鞋垫</a>
+            </li>
+            <li class="oneli">
+            <a target="_blank" class="li1 ui-link" title="烫钻" href="/ad/ShowAd?adId=5033&amp;entityId=4950&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00580017&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217112244.jpg" alt="烫钻">
+            <br>烫钻</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="PU大底" href="/ad/ShowAd?adId=5034&amp;entityId=4951&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00560011&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217112405.jpg" alt="PU大底">
+            <br>PU大底</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="鞋用拉链" href="/ad/ShowAd?adId=5035&amp;entityId=4952&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00580008&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217112937.jpg" alt="鞋用拉链">
+            <br>鞋用拉链</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="休闲鞋底" href="/ad/ShowAd?adId=5044&amp;entityId=4953&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00560014&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217113101.jpg" alt="休闲鞋底">
+            <br>EVA大底</a>
+            </li>
+                    <li class="twoli"><a href="/Product/Index?ClassCode=0005&amp;index=3" data-ajax="false" class="twonli2 ui-link">
+                        <img src="style/images/more.jpg"><br>
+                        更多</a></li>
+                </ul>
+            </div>
+            <div class="pro_bot" id="fenleito_5" style="display: none;">
+                <ul>
+
+            <li>
+            <a target="_blank" class="li1 ui-link" title="胶水" href="/ad/ShowAd?adId=5036&amp;entityId=4954&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00040023&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217113219.jpg" alt="胶水">
+            <br>胶水</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="防霉剂" href="/ad/ShowAd?adId=5037&amp;entityId=4955&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000400240002&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217113446.jpg" alt="防霉剂">
+            <br>防霉剂</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="阻燃剂" href="/ad/ShowAd?adId=5038&amp;entityId=4956&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000400210014&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217113637.jpg" alt="阻燃剂">
+            <br>干燥剂</a>
+            </li>
+            <li class="oneli">
+            <a target="_blank" class="li1 ui-link" title="脱脂剂" href="/ad/ShowAd?adId=5039&amp;entityId=4957&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D000400210002&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217113803.jpg" alt="脱脂剂">
+            <br>脱脂剂</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="橡胶" href="/ad/ShowAd?adId=5040&amp;entityId=4958&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FSearch%2FProduct%3Fkw%3D%25E6%25A9%25A1%25E8%2583%25B6&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217113931.jpg" alt="橡胶">
+            <br>橡胶</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="橡胶油墨" href="/ad/ShowAd?adId=5041&amp;entityId=4959&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FProduct%2FList%3FClassCode%3D00040022&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217114107.jpg" alt="橡胶油墨">
+            <br>橡胶油墨</a>
+            </li>
+            <li>
+            <a target="_blank" class="li1 ui-link" title="鞋蜡" href="/ad/ShowAd?adId=5042&amp;entityId=4960&amp;url=http%3A%2F%2Fmobile.acshoes.com%2FSearch%2FProduct%3Fkw%3D%25E9%259E%258B%25E8%259C%25A1&amp;companyId=-1">
+            <img src="http://www.acshoes.com/acshoesadmin/UploadFiles/20131217114230.jpg" alt="鞋蜡">
+            <br>鞋蜡</a>
+            </li>
+                    <li class="twoli"><a href="/Product/Index?ClassCode=0004&amp;index=5" data-ajax="false" class="twonli2 ui-link">
+                        <img src="style/images/more.jpg"><br>
+                        更多</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="con-new">
+            <div class="new-list">
+                <ul>
+                    <li>
+
+
+    <p>
+    <a href="/News/Details/42984" title="鞋服企业终端形象的背后：升级“大战”" class="newpa ui-link" data-ajax="false">
+    鞋服企业终端形象的背后：升级“大战”</a>
+    </p>
+                        <h2>
+                            <a data-ajax="false" href="/News/list/00010002" class="newh2 ui-link">
+                                行业新闻</a></h2>
+                    </li>
+                    <li>
+
+
+    <p>
+    <a href="/News/Details/42762" title="2015第十二届上海国际鞋类展览会" class="newpa ui-link" data-ajax="false">
+    2015第十二届上海国际鞋类展览会</a>
+    </p>
+                        <h2>
+                            <a data-ajax="false" href="/News/list/00030001" class="newh2 ui-link">
+                                展会信息</a></h2>
+                    </li>
+                    <li>
+
+
+    <p>
+    <a href="/News/Details/43083" title="跑鞋市场各大品牌掀起“高级鞋底”之战" class="newpa ui-link" data-ajax="false">
+    跑鞋市场各大品牌掀起“高级鞋底”之战</a>
+    </p>
+                        <h2>
+                            <a data-ajax="false" href="/News/MemberNews" class="newh2 ui-link">企业推荐</a></h2>
+                    </li>
+                </ul>
+                <div class="cboth">
+                </div>
+            </div>
+            <div class="cboth">
+            </div>
+        </div>
+        
+        <div data-role="widget" data-widget="nav4" class="nav4">
+            <nav>  
+                <div id="nav4_ul" class="nav_4">  
+                    <ul class="box">                          
+                        <li><a rel="external" href="/" class="ui-link"><span style="line-height:45px; display:block; padding-top:5px;">
+                        <img src="../../style/images/ff.png"></span></a></li>
+                        <li><a href="javascript:void(0);" class="ui-link">  </a>
+                        <a href="javascript:void(0);" class="ui-link"><span>我的美中</span></a>
+                            <dl>    
+                                <dd>  
+                                    <a rel="external" href="http://wx.acshoes.com/" class="ui-link"><span>我的账号</span></a>  
+                                </dd>     
+                                <dd>  
+                                    <a rel="external" href="http://wx.acshoes.com/Purchase/add" class="ui-link"><span>发布采购</span></a>  
+                                </dd>  
+                                <dd>  
+                                    <a rel="external" href="http://wx.acshoes.com/Product/add" class="ui-link"><span>发布产品</span></a>  
+                                </dd>  
+                            </dl>  
+                        </li>  
+                                    
+                        <li><a href="javascript:void(0);" class="ui-link"><span>产品分类</span></a>  
+                            <dl>
+                                <dd><a rel="external" href="http://mobile.acshoes.com/Product/List?ClassCode=0049" class="ui-link"><span>皮革皮料</span></a></dd>  
+                                <dd><a rel="external" href="http://mobile.acshoes.com/Product/List?ClassCode=0056" class="ui-link"><span>鞋底鞋跟</span></a></dd>  
+                                <dd><a rel="external" href="http://mobile.acshoes.com/Product/List?ClassCode=0005" class="ui-link"><span>鞋材辅料</span></a></dd>
+                                <dd><a rel="external" href="http://mobile.acshoes.com/Product/List?ClassCode=0051" class="ui-link"><span>制鞋设备</span></a></dd>  
+                                <dd><a rel="external" href="http://mobile.acshoes.com/Product/List?ClassCode=0004" class="ui-link"><span>鞋用化工</span></a></dd>                                  
+                            </dl> 
+                        </li>  
+                        <li> <a href="javascript:void(0);" class="ui-link"><span>美中服务</span></a>
+                            <dl>
+                                <dd> <a rel="external" href="http://m.acshoes.com/corp/News/Detail/586149" class="ui-link"><span>微营销会员</span></a>  </dd>  
+                                <dd> <a rel="external" href="http://m.acshoes.com/corp/News/Detail/586147" class="ui-link"><span>点点通会员</span></a></dd>
+                                <dd> <a rel="external" href="http://m.acshoes.com/corp/News/Detail/586148" class="ui-link"><span>品牌会员</span></a></dd>  
+                                <dd> <a rel="external" href="http://m.acshoes.com/corp/News/Detail/584382" class="ui-link"><span>美中金融</span></a>    </dd> 
+                                <dd> <a rel="external" href="http://mobile.acshoes.com/News/list/00030001" class="ui-link"><span>展会信息</span></a>    </dd> 
+                                 
+                            </dl>  
+                        </li>  
+                    </ul>  
+                </div>  
+            </nav>
+            <div id="nav4_masklayer" class="masklayer_div">
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/style/content.css">
+<div id="mcover" onclick="document.getElementById('mcover').style.display='';" style="display:none;">
+    <img src="../../style/images/guide.png">
+</div>
+
+<script type="text/javascript">
+    var webUrl = "http://m.acshoes.org";
+    var searchTag = "0"; //0搜产品，1搜公司，2搜品牌，3采购
+    $(function () {
+
+        $("#SearchItems li").click(function () {
+            $("#SearchItems li").removeClass("Search_on");
+            $(this).addClass("Search_on");
+            searchTag = $(this).attr("tag");
+        });
+
+        var kw = '';
+        if (kw != "") {
+            $("#txtkey").val(decodeURI(kw));
+        }
+    });
+
+    function clickSearch() {
+        var key = $.trim($("#txtkey").val());
+        if (key == '') {
+            alert("请输入要搜索的关键词");
+            return false;
+        }
+    }
+    /*
+　　* 定义ForceWindow类构造函数
+　　* 无参数
+　　* 无返回值
+　　*/
+    function ForceWindow() {
+        this.r = document.documentElement;
+        this.f = document.createElement("FORM");
+        this.f.target = "_blank";
+        this.f.method = "post";
+        this.r.insertBefore(this.f, this.r.childNodes[0]);
+    }
+
+    /*
+　　* 定义ForceWindow 类的open方法
+　　* 参数sUrl：字符串，要打开窗口的URL
+　　* 无返回值
+　　*/
+    ForceWindow.prototype.open = function (sUrl) {
+        this.f.action = sUrl;
+        this.f.submit();
+    }
+
+    function openwindow(targetUrl) {
+        var myWindow = new ForceWindow();
+        myWindow.open(targetUrl);
+    }
+
+    //分析url，获取url的各个参数信息 示例url： http://abc.com:8080/dir/index.html?id=255&m=hello#top
+    function parseURL(url) {
+        var a = document.createElement("a");
+        a.href = url;
+        return {
+            source: url,
+            protocol: a.protocol.replace(":", ""), // = "http" 
+            host: a.hostname, // = "abc.com"
+            port: a.port, // = "8080" 
+            query: a.search, // = "?id=255&m=hello"
+            params: (function () {
+                var ret = {},
+                seg = a.search.replace(/^\?/, "").split("&"),
+                len = seg.length, i = 0, s;
+                for (; i < len; i++) {
+                    if (!seg[i]) { continue; }
+                    s = seg[i].split("=");
+                    ret[s[0]] = s[1];
+                }
+                return ret;
+
+            })(),  //  = Object = { id: 255, m: hello }  取值时：myUrl.params.id
+            file: (a.pathname.match(/\/([^\/?#]+)$/i) || [, ""])[1], // = "index.html" 
+            hash: a.hash.replace("#", ""), // = "top" 
+            path: a.pathname.replace(/^([^\/])/, "/$1"), // = "/dir/index.html"  
+            relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [, ""])[1],
+            segments: a.pathname.replace(/^\//, "").split("/") //= Array = ["dir", "index.html"]
+        };
+    }	
+</script>
+
+<style type="text/css">
+  
+ *{padding:0; margin:0;}  
+.bg {  
+position: absolute;  
+z-index: -1;  
+top: 0;  
+left: 0;  
+right: 0;  
+bottom: 0;  
+opacity: 0.8;  
+}  
+ul, ol, li, dl {  
+list-style-type: none;  
+}  
+.box {  
+width: 100%;  
+display: -webkit-box;  
+display: -moz-box;  
+-webkit-box-orient: horizontal;  
+-moz-box-orient: horizontal;  
+-webkit-box-sizing: border-box;  
+-moz-box-sizing: border-box;  
+}  
+.box > * {  
+-webkit-box-flex: 1;  
+-moz-box-flex: 1;  
+}  
+a:link, a:visited {  
+color: #575757;  
+text-decoration: none;  
+}  
+a {  
+text-decoration: none;  
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0.35);  
+}  
+a:link, a:visited {  
+color: #575757;  
+text-decoration: none;  
+}  
+a {  
+text-decoration: none;  
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0.35);  
+}  
+  
+.nav4{  
+    height:45px;  
+}  
+.nav4 ul{  
+    position:fixed;  
+    z-index:200;  
+    bottom:0;  
+    left:0;  
+    width:100%  
+}  
+.nav4 li{  
+    border:1px solid rgba(190,190,190,1);  
+    height:45px;  
+    border-bottom:0;  
+    border-right:0;  
+    position:relative;  
+    -webkit-box-shadow:inset 0 0 3px #fff;  
+}  
+.nav4 li:nth-of-type(1){border-left;0;}  
+.nav4 li>a{  
+    font-size:15px;  
+    -webkit-box-sizing:border-box;  
+    box-sizing:border-box;  
+    /*border:1px solid #f9f8f9;*/  
+    -webkit-tap-highlight-color:rgba(0,0,0,0);  
+    border-bottom:0;  
+    display:block;  
+    line-height:45px;  
+    text-align:center;  
+	 text-shadow:none;
+/*    background:-webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#dcdcdc), color-stop(35% ,#ededed), color-stop(50%, #e3e3e3) );
+  
+*/
+background:#FFF;
+}  
+.nav4 li:nth-of-type(1){border-left;0;}  
+.nav4 li>a:hover{ background:#bababa; color:#FFF; text-outline:none; text-shadow:none;}
+
+
+.nav4 li>a:only-child span{  
+    background:none;  
+    padding-left:0;  
+}  
+.nav4 li>a.on + dl{  
+    display: block;  
+}  
+.nav4 li>a span{  
+   
+    color: #4f4d4f;  
+    display: inline-block;  
+     background: url(imgs/1.svg#2) no-repeat 4px 18px;  
+    -webkit-background-size: 9px auto;  
+    text-shadow:none; 
+	color:#333;
+	
+	}  
+	
+	
+/***********************/  
+.nav4 dl{  
+   
+       
+    box-shadow:0 0 10px #abaaaa;
+    display:none;  
+    position:absolute;  
+    z-index:220;  
+    bottom:60px;  
+    left:50%;  
+    width:100px;  
+    margin-left:-50px;  
+    background:red;  
+    /*min-height:100px;*/  
+    background:#e4e3e2;  
+    /*border:1px solid #afaeaf;*/  
+    border-radius:5px;  
+    -webkit-box-shadow:inset 0 0 3px #fff;  
+    background:url(imgs/2.svg#3) no-repeat center center;  
+    -webkit-background-size:100%;  
+    background-size:100%;
+	border:1px solid #CCC; background:#FFF;
+}  
+/*, .nav4 dl:after*/  
+.nav4 dl:before{  
+    content:"";  
+    display:inline-block;  
+    position:absolute;  
+    z-index:240;  
+    bottom:0;  
+    left:50%;  
+    /*width:0; 
+    height:0; 
+    border:8px solid red; 
+    border-color:#afaeaf transparent transparent transparent; 
+    margin-left:-8px; 
+    margin-bottom:-16px;*/  
+    width:10px;  
+    height:8px;  
+    background:url(../../style/images/1.svg) no-repeat center -55px;  
+    -webkit-background-size: 10px auto;  
+    bottom: -7px;  
+    margin-left: -5px;  
+}  
+/*.nav4 dl:after{ 
+    z-index:241; 
+    border-color:#e4e3e2 transparent transparent transparent; 
+    margin-bottom:-15px; 
+}*/  
+.nav4 dl dd{  
+    line-height:45px;  
+    text-align:center;  
+    background:-webkit-gradient(linear, 0 0, 100% 0, from(rgba(194,194,194,0.8)), to(rgba(194,194,194,0.8)), color-stop(50%, rgba(194,194,194,0.8)));  
+    background-size:80% 1px;  
+    background-repeat:no-repeat;  
+    background-position: center bottom;  
+    /*background: url(imgs/3.svg#4) no-repeat center bottom; 
+    -webkit-background-size:100px 1px;*/  
+}  
+.nav4 dl dd:last-of-type{  
+    background:none;  
+}  
+.nav4 dl dd a{  
+    font-size: 15px;  
+    display:block;  
+    color:#4f4d4f;  
+    text-shadow:0px 1px 0px #ffffff;  
+    white-space: pre;  
+    overflow: hidden;  
+    text-overflow: ellipsis;  
+}  
+.nav4 dl dd a:hover{ background:#999; color:#FFF; text-shadow:none;}
+.nav4 .masklayer_div{  
+    display: none;  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    z-index: 180;  
+    background: rgba(0,0,0,0);  
+}  
+.nav4 .masklayer_div.on{display: block;}  
+  
+  </style>
+
+<script type="text/javascript">
+    var nav4 = (function () {
+        bindClick = function (els, mask) {
+            if (!els || !els.length) { return; }
+            var isMobile = "ontouchstart" in window;
+            for (var i = 0, ci; ci = els[i]; i++) {
+                ci.addEventListener("click", evtFn, false);
+            }
+
+            function evtFn(evt, ci) {
+                ci = this;
+                for (var j = 0, cj; cj = els[j]; j++) {
+                    if (cj != ci) {
+                        console.log(cj);
+                        cj.classList.remove("on");
+                    }
+                }
+                if (ci == mask) { mask.classList.remove("on"); return; }
+                switch (evt.type) {
+                    case "click":
+                        var on = ci.classList.toggle("on");
+                        mask.classList[on ? "add" : "remove"]("on");
+                        break;
+                }
+            }
+            mask.addEventListener(isMobile ? "touchstart" : "click", evtFn, false);
+        }
+        return { "bindClick": bindClick };
+    })();            
+            
+</script>
+
+<script type="text/javascript">
+    nav4.bindClick(document.getElementById("nav4_ul").querySelectorAll("li>a"), document.getElementById("nav4_masklayer"));  
+</script>
+
+
+
+<div class="ui-loader ui-body-a ui-corner-all" style="top: 284px;"><span class="ui-icon ui-icon-loading spin"></span><h1>loading</h1></div></body></html>
